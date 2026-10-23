@@ -1,0 +1,22 @@
+# ── Sensitive / machine-specific config ──────────────────
+# Real DB credentials stay local. Copy database.sample.php instead.
+config/database.php
+
+# ── User-uploaded content (privacy: real incident photos) ─
+# Keep the folder structure, never the actual uploads.
+uploads/incidents/*
+!uploads/incidents/.gitkeep
+
+# ── Local test / debugging scripts ────────────────────────
+test_*.php
+*_tmp.php
+
+# ── OS / editor junk ──────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+
+# ── Python bridge runtime ─────────────────────────────────
+bridge/__pycache__/
+bridge/.venv/
